@@ -1121,16 +1121,24 @@ body {
 
     /* -----------------------Reviews----------------------- */
 
+    .reviews {
+        position: relative;
+        width: 100%;
+    }
     .quotes-top {
         display: none;
     }
     .quotes-bottom {
         transform: rotate(180deg);
         right: 0;
-        bottom: 450px;
+        bottom: 350px;
+        z-index: 101;
     }
     .title-reviews-block > h2 {
         text-align: start;
+    }
+    .title-reviews-block {
+        padding-top: 100px;
     }
 
     .swiper .card .description {
@@ -1140,7 +1148,26 @@ body {
 
     .quotes-bottom > img {
         width: 64px;
-        /* height: 64px; */
+    }
+
+    .background-reviews-top {
+        /* background-image: url(images/reviews/top-back-mob.png); */
+        height: 180px;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        z-index: 100;
+    }
+    
+    .background-reviews {
+        background-image: url(images/reviews/Rectangle\ 13.png);
+        height: 70vh;
+    }
+
+
+    .reviews-block {
+        min-height: 557px;
+        padding-top: 150px;
     }
 
     /* -----------------------CONTACTS----------------------- */
@@ -1188,6 +1215,10 @@ body {
     }
     .footer-figure {
         width: 120px;
-        top: 50px;
+        top: 0px;
+    }
+
+    .footer-block {
+        padding-top: 100px;
     }
 }

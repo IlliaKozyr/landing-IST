@@ -564,6 +564,9 @@ body {
 
 /* ----------------------SECTION 3 ABOUT US------------------------ */
 
+.pc {
+    display: none;
+}
 .about-us {
     position: relative;
 }
@@ -1074,12 +1077,71 @@ body {
     }
 
     /* -----------------------ABOUT US----------------------- */
+
+    .pc {
+        display: inline-block;
+    }
     .large-triangle-about-us {
         display: none;
     }
 
-    .large-semicircle-about-us {
+    .about-us-main-block {
+        flex-direction: column;
+    }
+
+    .absolute.group-figures-about-us {
         display: none;
+    }
+
+    .large-semicircle-about-us {
+       width: 200px;
+       top: 800px;
+       right: -15px;
+    }
+
+    .about-us-img-phone-block {
+        width: 300px;
+        position: absolute;
+        left: 40px;
+        top: 860px;
+    }
+
+    .title.title-about-us,
+    .text.text-about-us {
+        text-align: start;
+    }
+
+    .rectangle-about-us {
+        width: 50%;
+        left: 5px;
+    }
+
+    /* ------------------------FIGURES ABOUT US -------------- */
+
+    
+    .small-star-no-bg {
+        bottom: 220px;
+    }
+   
+    .small-star-bg {
+        bottom: 180px;
+        left: 15%;
+    }
+    .small-elipse-right {
+        bottom: 110px;
+        left: 0;
+    }
+    .small-star-no-bg-2 {
+        bottom: 60px;
+        left: 15%;
+    }
+    .small-star-bg-2 {
+        bottom: 0px;
+        left: 0;
+    }
+    .small-elipse-left {
+        bottom: -60px;
+        left: 15%;
     }
 
     /* ----------------------- PROJECTS----------------------- */

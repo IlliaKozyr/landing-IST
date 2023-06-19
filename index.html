@@ -8,19 +8,25 @@
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         />
         <link rel="stylesheet" href="style.css" />
-
         <title>Настройка Google Ads</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+        />
     </head>
 
     <body>
         <div class="wrapper">
             <div class="popup-wrap">
-                <div class="popup-content">
-                    <a href="#">
-                        <span onclick="openPopup()"></span>
-                    </a>
-
-                    <div class="popup">
+                <div class="popup-content position-relative">
+                    <button
+                        type="button"
+                        onclick="openPopup()"
+                        class="btn-close"
+                        aria-label="Close"
+                    ></button>
                         <div class="popup-title-block">
                             <h2 class="title popup-title">Заполнить форму</h2>
                         </div>
@@ -43,12 +49,15 @@
                                     class="input-popup"
                                 />
                             </div>
-                            <div
-                                onclick="openPopup();"
-                                class="button popup default-btn popup-btn"
-                            >
-                                <p class="default-btn-text">Отправить</p>
-                            </div>
+                            <button
+                                    type="button"
+                                    onclick="openPopup()"
+                                    class="btn default-btn default-btn-mob"
+                                >
+                                    <span class="default-btn-text default-btn-text-mob">
+                                        Отправить
+                                    </span>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -56,59 +65,87 @@
 
             <section class="top-section background background-header">
                 <header class="header">
-                    <div class="header__container container-other">
-                        <div class="menu__icon">
-                            <span></span>
-                        </div>
-                        <div class="header__menu__block">
-                            <a href="#" class="header__logo main-link"
-                            ><img src="/images/for-grad/logo.svg"
-                        /></a>
-                        <div class="header__menu menu">
-                            <nav class="menu__body nav-bar">
-                                <ul class="menu__list list-block">
-                                    <li class="nav-paragraph">
-                                        <a class="menu__link nav-link" href="#">
-                                            <p class="nav-text">О нас</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-paragraph">
-                                        <a class="menu__link nav-link" href="#">
-                                            <p class="nav-text">Проекты</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-paragraph">
-                                        <a class="menu__link nav-link" href="#">
-                                            <p class="nav-text">Отзывы</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-paragraph">
-                                        <a class="menu__link nav-link" href="#">
-                                            <p class="nav-text">Контакты</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-paragraph nav-btn">
-                                        <div
-                                            class="menu__link popup default-btn background-white"
-                                            onclick="openPopup();"
-                                        >
-                                            <p
-                                                class="default-btn-text default-btn-text-color"
+                    <div class="container custom-container">
+                        <nav
+                            class="navbar navbar-expand-lg navbar-light bg-transparent"
+                        >
+                            <div
+                                class="container-fluid d-flex justify-content-between"
+                            >
+                                <a class="navbar-brand" href="#">
+                                    <img
+                                        src="/images/for-grad/logo.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <button
+                                    class="navbar-toggler custom-toggle"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav"
+                                    aria-controls="navbarNav"
+                                    aria-expanded="false"
+                                    aria-label="Переключатель навигации"
+                                >
+                                    <span
+                                        class="navbar-toggler-icon custom-toggler-icon d-fixed"
+                                    ></span>
+                                </button>
+                            </div>
+                            <div
+                                class="collapse navbar-collapse"
+                                id="navbarNav"
+                            >
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span
+                                                class="default-text text-nowrap"
                                             >
-                                                Обратный звонок
-                                            </p>
-                                        </div>
+                                                О нас
+                                            </span>
+                                        </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="default-text">
+                                                Проекты
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="default-text">
+                                                Отзывы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="default-text">
+                                                Контакты
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <button
+                                        type="button"
+                                        onclick="openPopup()"
+                                        class="btn default-btn default-btn-bg"
+                                    >
+                                        <span
+                                            class="default-btn-text default-btn-text-color"
+                                        >
+                                            Обратный звонок
+                                        </span>
+                                    </button>
                                 </ul>
-                            </nav>
-                        </div>
-                        </div>
-                       
+                            </div>
+                        </nav>
                     </div>
                 </header>
 
                 <section class="main-section">
-                    <div class="container-other">
+                    <div class="container custom-container">
                         <div class="title-block">
                             <div class="title-block-text">
                                 <h1 class="title title-header">
@@ -119,15 +156,15 @@
                                     для вашего бизнеса и обеспечивающие рост
                                     продаж
                                 </p>
-                                <div
-                                    onclick="openPopup();"
-                                    class="button popup default-btn default-btn-header"
+                                <button
+                                    type="button"
+                                    onclick="openPopup()"
+                                    class="btn default-btn"
                                 >
-                                    <p class="default-btn-text">
+                                    <span class="default-btn-text">
                                         Получить консультацию
-                                    </p>
-                                </div>
-
+                                    </span>
+                                </button>
                                 <div class="img-points">
                                     <img
                                         src="/images/for-grad/Group 4.png"
@@ -203,7 +240,7 @@
 
             <main>
                 <section class="сreating-and-configuring-advertising-risks">
-                    <div class="container">
+                    <div class="container-other">
                         <div
                             class="сreating-and-configuring-advertising-risks-block"
                         >
@@ -296,14 +333,25 @@
                                         </p>
                                     </div>
                                     <div class="price-btn-block">
-                                        <a
+                                        <!-- <a
                                             class="popup default-btn btn-for-mob-link"
                                             onclick="openPopup()"
                                         >
-                                            <p class="default-btn-text btn-for-mob">
+                                            <p
+                                                class="default-btn-text btn-for-mob"
+                                            >
                                                 Заказать
                                             </p>
-                                        </a>
+                                        </a> -->
+                                        <button
+                                            type="button"
+                                            onclick="openPopup()"
+                                            class="btn default-btn"
+                                        >
+                                            <span class="default-btn-text">
+                                                Заказать
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +412,7 @@
                     ></div>
 
                     <div class="background background-about-us-main">
-                        <div class="container">
+                        <div class="container-other custom-container">
                             <div class="about-us-main-block">
                                 <div class="about-us-main">
                                     <div class="title-block-about-us">
@@ -435,22 +483,40 @@
                                     />
                                 </div>
                                 <div class="absolute small-star-no-bg pc">
-                                    <img src="/images/about-us/figures for mob/Star 5.png" alt="">
+                                    <img
+                                        src="/images/about-us/figures for mob/Star 5.png"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="absolute small-star-bg pc">
-                                    <img src="/images/about-us/figures for mob/Star 2.png" alt="">
+                                    <img
+                                        src="/images/about-us/figures for mob/Star 2.png"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="absolute small-elipse-right pc">
-                                    <img src="/images/about-us/figures for mob/Ellipse 51.png" alt="">
+                                    <img
+                                        src="/images/about-us/figures for mob/Ellipse 51.png"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="absolute small-star-no-bg-2 pc">
-                                    <img src="/images/about-us/figures for mob/Star 6.png" alt="">
+                                    <img
+                                        src="/images/about-us/figures for mob/Star 6.png"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="absolute small-star-bg-2 pc">
-                                    <img src="/images/about-us/figures for mob/Star 7.png" alt="">
+                                    <img
+                                        src="/images/about-us/figures for mob/Star 7.png"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="absolute small-elipse-left pc">
-                                    <img src="/images/about-us/figures for mob/Ellipse 1.png" alt="">
+                                    <img
+                                        src="/images/about-us/figures for mob/Ellipse 1.png"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -458,13 +524,15 @@
                     <div class="background background-about-us-bottom"></div>
                 </section>
                 <section class="projects">
-                    <div class="container">
+                    <div class="container-other">
                         <div class="projects-block">
                             <div class="projects-images-block">
                                 <div>
-                                    <h2 class="title title-projects-black">Проекты</h2>
+                                    <h2 class="title title-projects-black">
+                                        Проекты
+                                    </h2>
                                 </div>
-                                <div class="projects-screen-block ">
+                                <div class="projects-screen-block">
                                     <img
                                         src="/images/Projects-screenshot/image 9.png"
                                         class="projects-screen-image projects-screen-block-large"
@@ -513,14 +581,15 @@
                                         ROI с помощью нашей экспертной настройки
                                         рекламы.
                                     </p>
-                                    <a
+                                    <button
+                                        type="button"
                                         onclick="openPopup()"
-                                        class="popup default-btn"
+                                        class="btn default-btn"
                                     >
-                                        <p class="default-btn-text">
+                                        <span class="default-btn-text">
                                             Получить консультацию
-                                        </p>
-                                    </a>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="absolute projects-rocket">
@@ -570,7 +639,7 @@
                 <section class="reviews">
                     <div class="background background-reviews-top"></div>
                     <div class="background background-reviews">
-                        <div class="container">
+                        <div class="container-other">
                             <div class="reviews-block">
                                 <div class="absolute quotes-top">
                                     <img
@@ -585,7 +654,9 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         src="/images/reviews/men1.png"
@@ -613,7 +684,9 @@
                                         </div>
 
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         class="card-avatar"
@@ -643,7 +716,9 @@
                                         </div>
 
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         class="card-avatar"
@@ -671,7 +746,9 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         src="/images/reviews/men1.png"
@@ -700,7 +777,9 @@
                                         </div>
 
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         class="card-avatar"
@@ -730,7 +809,9 @@
                                         </div>
 
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         class="card-avatar"
@@ -758,7 +839,9 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         src="/images/reviews/men1.png"
@@ -786,7 +869,9 @@
                                         </div>
 
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         class="card-avatar"
@@ -816,7 +901,9 @@
                                         </div>
 
                                         <div class="swiper-slide card">
-                                            <div class="card-header">
+                                            <div
+                                                class="card-header custom-card-header"
+                                            >
                                                 <div class="thumbnail">
                                                     <img
                                                         class="card-avatar"
@@ -952,6 +1039,16 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"
+        ></script>
         <script src="/index.js"></script>
     </body>
 </html>

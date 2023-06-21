@@ -1,339 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Настройка Google Ads</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-            crossorigin="anonymous"
-        />
-    </head>
 
-    <body>
-        <div class="wrapper">
-            <div class="popup-wrap">
-                <div class="popup-content position-relative">
-                    <button
-                        type="button"
-                        onclick="openPopup()"
-                        class="btn-close"
-                        aria-label="Close"
-                    ></button>
-                        <div class="popup-title-block">
-                            <h2 class="title popup-title">Заполнить форму</h2>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Настройка Google Ads</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="popup-wrap">
+            <div class="popup-content position-relative">
+                <button type="button" onclick="openPopup()" class="btn-close" aria-label="Close"></button>
+                <div class="popup-title-block">
+                    <h2 class="title popup-title">Заполнить форму</h2>
+                </div>
+                <form class="form-popup-block">
+                    <div class="form-popup-input-block">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control border border-2 rounded-pill p-3 mb-4 custom-input-popup"
+                                placeholder="Ваше имя">
+                            <input type="text" class="form-control border border-2 rounded-pill p-3 mb-4 custom-input-popup"
+                                placeholder="+ 380 (00) 000 00 00" onblur="clearPrefix()" onfocus="restorePrefix()">
                         </div>
-                        <form class="form-popup-block">
-                            <div class="form-popup-input-block">
-                                <input
-                                    type="text"
-                                    name="first-name"
-                                    id="first-name "
-                                    placeholder="Ваше имя"
-                                    class="input-popup"
-                                />
-                                <input
-                                    type="tel"
-                                    id=""
-                                    name="phone"
-                                    placeholder="+ 380 (00) 000 00 00"
-                                    onblur="clearPrefix()"
-                                    onfocus="restorePrefix()"
-                                    class="input-popup"
-                                />
-                            </div>
-                            <button
-                                    type="button"
-                                    onclick="openPopup()"
-                                    class="btn default-btn default-btn-mob"
-                                >
-                                    <span class="default-btn-text default-btn-text-mob">
-                                        Отправить
+                    </div>
+                    <button type="button" onclick="openPopup()" class="btn default-btn default-btn-mob mt-4">
+                        <span class="default-btn-text default-btn-text-mob">
+                            Отправить
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="top-section background background-header">
+        <header class="header">
+            <div class="container custom-container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/for-grad/logo.svg" alt="" />
+                        </a>
+                        <button class="navbar-toggler custom-toggle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Переключатель навигации">
+                            <span class="navbar-toggler-icon custom-toggler-icon d-fixed"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="default-text text-nowrap">
+                                        О нас
                                     </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="default-text">
+                                        Проекты
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="default-text">
+                                        Отзывы
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="default-text">
+                                        Контакты
+                                    </span>
+                                </a>
+                            </li>
+                            <button type="button" onclick="openPopup()" class="btn default-btn default-btn-bg">
+                                <span class="default-btn-text default-btn-text-color">
+                                    Обратный звонок
+                                </span>
                             </button>
-                        </form>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="main-section">
+            <div class="container custom-container">
+                <div class="title-block">
+                    <div class="title-block-text">
+                        <h1 class="title title-header">
+                            Превратите клики в клиентов с Google Ads
+                        </h1>
+                        <p class="text title-text">
+                            Эффективные рекламные стратегии, подходящие
+                            для вашего бизнеса и обеспечивающие рост
+                            продаж
+                        </p>
+                        <button type="button" onclick="openPopup()" class="btn default-btn">
+                            <span class="default-btn-text">
+                                Получить консультацию
+                            </span>
+                        </button>
+                        <div class="img-points">
+                            <img src="/images/for-grad/Group 4.png" alt="images points" />
+                        </div>
+                    </div>
+                    <div class="title-mac">
+                        <img src="/images/for-grad/iMac 24 inch2x.png" alt="iMac" class="image-mac" />
+                    </div>
+                    <div class="absolute star-bg-header">
+                        <img src="/images/for-grad/Star2_w_Back.png" alt="star" />
+                    </div>
+                    <div class="absolute ellipse-left-header">
+                        <img src="/images/for-grad/Ellipse 51.png" alt="star" />
+                    </div>
+                    <div class="absolute star-no-bg-header">
+                        <img src="/images/for-grad/Star_No_Back.png" alt="star" />
+                    </div>
+                    <div class="absolute triangle-header">
+                        <img src="/images/for-grad/triangle.png" alt="star" />
+                    </div>
+                    <div class="absolute star-bg-2-header">
+                        <img src="/images/for-grad/Star2_w_Back.png" alt="star" />
+                    </div>
+                    <div class="absolute star-no-bg-2-header">
+                        <img src="/images/for-grad/Star_No_Back.png" alt="star" />
+                    </div>
+                    <div class="absolute square-header">
+                        <img src="/images/for-grad/small_square.png" alt="star" />
+                    </div>
+                    <div class="absolute square-2-header">
+                        <img src="/images/for-grad/small_square.png" alt="star" />
+                    </div>
+                    <div class="absolute ellipse-right-header">
+                        <img src="/images/for-grad/Ellipse 1.png" alt="star" />
                     </div>
                 </div>
             </div>
+        </section>
+    </section>
 
-            <section class="top-section background background-header">
-                <header class="header">
-                    <div class="container custom-container">
-                        <nav
-                            class="navbar navbar-expand-lg navbar-light bg-transparent"
-                        >
-                            <div
-                                class="container-fluid d-flex justify-content-between"
-                            >
-                                <a class="navbar-brand" href="#">
-                                    <img
-                                        src="/images/for-grad/logo.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <button
-                                    class="navbar-toggler custom-toggle"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#navbarNav"
-                                    aria-controls="navbarNav"
-                                    aria-expanded="false"
-                                    aria-label="Переключатель навигации"
-                                >
-                                    <span
-                                        class="navbar-toggler-icon custom-toggler-icon d-fixed"
-                                    ></span>
-                                </button>
-                            </div>
-                            <div
-                                class="collapse navbar-collapse"
-                                id="navbarNav"
-                            >
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            <span
-                                                class="default-text text-nowrap"
-                                            >
-                                                О нас
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            <span class="default-text">
-                                                Проекты
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            <span class="default-text">
-                                                Отзывы
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            <span class="default-text">
-                                                Контакты
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <button
-                                        type="button"
-                                        onclick="openPopup()"
-                                        class="btn default-btn default-btn-bg"
-                                    >
-                                        <span
-                                            class="default-btn-text default-btn-text-color"
-                                        >
-                                            Обратный звонок
-                                        </span>
-                                    </button>
-                                </ul>
-                            </div>
-                        </nav>
+    <main>
+        <section class="сreating-and-configuring-advertising-risks">
+            <div class="container-other">
+                <div class="сreating-and-configuring-advertising-risks-block">
+                    <div class="main-title-cacar">
+                        <h2 class="title title-cacar">
+                            Создание и настройка рекламных кампаний
+                        </h2>
                     </div>
-                </header>
+                    <div class="absolute narrow-square-block">
+                        <img src="/images/narrow-square.png" alt="narrow square" class="narrow-square" />
+                    </div>
+                    <div class="h3-title">
+                        <h3 class="h3-title-cacar">
+                            Что входит в стоимость?
+                        </h3>
 
-                <section class="main-section">
-                    <div class="container custom-container">
-                        <div class="title-block">
-                            <div class="title-block-text">
-                                <h1 class="title title-header">
-                                    Превратите клики в клиентов с Google Ads
-                                </h1>
-                                <p class="text title-text">
-                                    Эффективные рекламные стратегии, подходящие
-                                    для вашего бизнеса и обеспечивающие рост
-                                    продаж
+                        <ul class="list-block-cacar">
+                            <li>
+                                <div class="paragraph-numbers">1</div>
+                                <p class="paragraph-numbers-text">
+                                    Пошукові рекламні кампанії
                                 </p>
-                                <button
-                                    type="button"
-                                    onclick="openPopup()"
-                                    class="btn default-btn"
-                                >
-                                    <span class="default-btn-text">
-                                        Получить консультацию
-                                    </span>
-                                </button>
-                                <div class="img-points">
-                                    <img
-                                        src="/images/for-grad/Group 4.png"
-                                        alt="images points"
-                                    />
-                                </div>
-                            </div>
-                            <div class="title-mac">
-                                <img
-                                    src="/images/for-grad/iMac 24 inch2x.png"
-                                    alt="iMac"
-                                    class="image-mac"
-                                />
-                            </div>
-                            <div class="absolute star-bg-header">
-                                <img
-                                    src="/images/for-grad/Star2_w_Back.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute ellipse-left-header">
-                                <img
-                                    src="/images/for-grad/Ellipse 51.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute star-no-bg-header">
-                                <img
-                                    src="/images/for-grad/Star_No_Back.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute triangle-header">
-                                <img
-                                    src="/images/for-grad/triangle.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute star-bg-2-header">
-                                <img
-                                    src="/images/for-grad/Star2_w_Back.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute star-no-bg-2-header">
-                                <img
-                                    src="/images/for-grad/Star_No_Back.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute square-header">
-                                <img
-                                    src="/images/for-grad/small_square.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute square-2-header">
-                                <img
-                                    src="/images/for-grad/small_square.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute ellipse-right-header">
-                                <img
-                                    src="/images/for-grad/Ellipse 1.png"
-                                    alt="star"
-                                />
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <div class="paragraph-numbers">2</div>
+                                <p class="paragraph-numbers-text">
+                                    Динамічна пошукова реклама
+                                </p>
+                            </li>
+                            <li>
+                                <div class="paragraph-numbers">3</div>
+                                <p class="paragraph-numbers-text">
+                                    Робота дизайнера над креативами
+                                </p>
+                            </li>
+                            <li>
+                                <div class="paragraph-numbers">4</div>
+                                <p class="paragraph-numbers-text">
+                                    Динамічний звіт в Data Studio
+                                </p>
+                            </li>
+                            <li>
+                                <div class="paragraph-numbers">5</div>
+                                <p class="paragraph-numbers-text">
+                                    Google Shopping
+                                </p>
+                            </li>
+                            <li>
+                                <div class="paragraph-numbers">6</div>
+                                <p class="paragraph-numbers-text">
+                                    Динамічний ремаркетинг
+                                </p>
+                            </li>
+                            <li>
+                                <div class="paragraph-numbers">7</div>
+                                <p class="paragraph-numbers-text">
+                                    Налаштування розширеної електронної
+                                    комерції та Google Analytics
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                </section>
-            </section>
-
-            <main>
-                <section class="сreating-and-configuring-advertising-risks">
-                    <div class="container-other">
-                        <div
-                            class="сreating-and-configuring-advertising-risks-block"
-                        >
-                            <div class="main-title-cacar">
-                                <h2 class="title title-cacar">
-                                    Создание и настройка рекламных кампаний
-                                </h2>
-                            </div>
-                            <div class="absolute narrow-square-block">
-                                <img
-                                    src="/images/narrow-square.png"
-                                    alt="narrow square"
-                                    class="narrow-square"
-                                />
-                            </div>
-                            <div class="h3-title">
-                                <h3 class="h3-title-cacar">
-                                    Что входит в стоимость?
+                    <div class="price-block-main">
+                        <div class="rocket-block">
+                            <img src="/images/rocket.png" alt="rocket" class="rocket" />
+                        </div>
+                        <div class="price-block">
+                            <div class="price-title-block">
+                                <h3 class="price-block-title h3-title-cacar h3-title-cacar-lap">
+                                    Стоимость?
                                 </h3>
-
-                                <ul class="list-block-cacar">
-                                    <li>
-                                        <div class="paragraph-numbers">1</div>
-                                        <p class="paragraph-numbers-text">
-                                            Пошукові рекламні кампанії
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <div class="paragraph-numbers">2</div>
-                                        <p class="paragraph-numbers-text">
-                                            Динамічна пошукова реклама
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <div class="paragraph-numbers">3</div>
-                                        <p class="paragraph-numbers-text">
-                                            Робота дизайнера над креативами
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <div class="paragraph-numbers">4</div>
-                                        <p class="paragraph-numbers-text">
-                                            Динамічний звіт в Data Studio
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <div class="paragraph-numbers">5</div>
-                                        <p class="paragraph-numbers-text">
-                                            Google Shopping
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <div class="paragraph-numbers">6</div>
-                                        <p class="paragraph-numbers-text">
-                                            Динамічний ремаркетинг
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <div class="paragraph-numbers">7</div>
-                                        <p class="paragraph-numbers-text">
-                                            Налаштування розширеної електронної
-                                            комерції та Google Analytics
-                                        </p>
-                                    </li>
-                                </ul>
                             </div>
-                            <div class="price-block-main">
-                                <div class="rocket-block">
-                                    <img
-                                        src="/images/rocket.png"
-                                        alt="rocket"
-                                        class="rocket"
-                                    />
-                                </div>
-                                <div class="price-block">
-                                    <div class="price-title-block">
-                                        <h3
-                                            class="price-block-title h3-title-cacar h3-title-cacar-lap"
-                                        >
-                                            Стоимость?
-                                        </h3>
-                                    </div>
-                                    <div class="price-number-block">
-                                        <h3 class="price-number">от 5000 ₴</h3>
-                                    </div>
-                                    <div class="price-text-block">
-                                        <p class="price-text">
-                                            Стоимость указана за ведение одного
-                                            проекта/месяц.
-                                        </p>
-                                    </div>
-                                    <div class="price-btn-block">
-                                        <!-- <a
+                            <div class="price-number-block">
+                                <h3 class="price-number">от 5000 ₴</h3>
+                            </div>
+                            <div class="price-text-block">
+                                <p class="price-text">
+                                    Стоимость указана за ведение одного
+                                    проекта/месяц.
+                                </p>
+                            </div>
+                            <div class="price-btn-block">
+                                <!-- <a
                                             class="popup default-btn btn-for-mob-link"
                                             onclick="openPopup()"
                                         >
@@ -343,712 +242,512 @@
                                                 Заказать
                                             </p>
                                         </a> -->
-                                        <button
-                                            type="button"
-                                            onclick="openPopup()"
-                                            class="btn default-btn"
-                                        >
-                                            <span class="default-btn-text">
-                                                Заказать
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute star-bg-cacar">
-                                <img
-                                    src="/images/images-for-section-2/Star-bg.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute star-no-bg-cacar">
-                                <img
-                                    src="/images/images-for-section-2/Star-no-bg.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute elipse-cacar-left">
-                                <img
-                                    src="/images/images-for-section-2/Ellipse-left.png"
-                                    alt="elipse"
-                                />
-                            </div>
-                            <div class="absolute star-bg-cacar-2">
-                                <img
-                                    src="/images/images-for-section-2/Star-bg.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute star-no-bg-cacar-2">
-                                <img
-                                    src="/images/images-for-section-2/Star-no-bg.png"
-                                    alt="star"
-                                />
-                            </div>
-                            <div class="absolute elipse-cacar-right">
-                                <img
-                                    src="/images/images-for-section-2/Ellipse-right.png"
-                                    alt="elipse"
-                                />
-                            </div>
-                            <div class="absolute square-cacar">
-                                <img
-                                    src="/images/images-for-section-2/Group 36.png"
-                                    alt="elipse"
-                                />
-                            </div>
-                            <div class="absolute square-cacar-2">
-                                <img
-                                    src="/images/images-for-section-2/Group 36.png"
-                                    alt="elipse"
-                                />
+                                <button type="button" onclick="openPopup()" class="btn default-btn">
+                                    <span class="default-btn-text">
+                                        Заказать
+                                    </span>
+                                </button>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="about-us">
-                    <div
-                        class="absolute background background-about-us-top"
-                    ></div>
-
-                    <div class="background background-about-us-main">
-                        <div class="container-other custom-container">
-                            <div class="about-us-main-block">
-                                <div class="about-us-main">
-                                    <div class="title-block-about-us">
-                                        <h2 class="title title-about-us">
-                                            О нас
-                                        </h2>
-                                    </div>
-                                    <div class="text-block-about-us">
-                                        <p class="text text-about-us">
-                                            Наша компания – это команда
-                                            экспертов с более чем 10-летним
-                                            опытом в сфере настройки рекламы
-                                            Google Ads.
-                                        </p>
-                                        <p class="text text-about-us">
-                                            Мы гордимся нашей командой
-                                            сертифицированных специалистов,
-                                            которые постоянно совершенствуют
-                                            свои навыки и внедряют передовые
-                                            решения для достижения максимальных
-                                            результатов.
-                                        </p>
-                                        <p class="text text-about-us">
-                                            Обращаясь к нам, вы получаете
-                                            гарантию высокой конверсии,
-                                            оптимального использования бюджета и
-                                            индивидуального подхода к вашему
-                                            бизнесу. <br />
-                                            Выбирая нас, вы выбираете успех!
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="about-us-img-phone-block">
-                                    <img
-                                        src="/images/about-us/phone.png"
-                                        alt="phone"
-                                        class="about-us-img-phone"
-                                    />
-                                </div>
-                                <div class="absolute rectangle-about-us">
-                                    <img
-                                        src="/images/about-us/rectangle.png"
-                                        alt="rectangle"
-                                    />
-                                </div>
-                                <div class="absolute rectangle-points-about-us">
-                                    <img
-                                        src="/images/about-us/rectangle-points.png"
-                                        alt="rectangle"
-                                    />
-                                </div>
-                                <div class="absolute group-figures-about-us">
-                                    <img
-                                        src="/images/about-us/figures/Group 13.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute large-semicircle-about-us">
-                                    <img
-                                        src="/images/about-us/large-semicircle.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute large-triangle-about-us">
-                                    <img
-                                        src="/images/about-us/large-triangle.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute small-star-no-bg pc">
-                                    <img
-                                        src="/images/about-us/figures for mob/Star 5.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute small-star-bg pc">
-                                    <img
-                                        src="/images/about-us/figures for mob/Star 2.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute small-elipse-right pc">
-                                    <img
-                                        src="/images/about-us/figures for mob/Ellipse 51.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute small-star-no-bg-2 pc">
-                                    <img
-                                        src="/images/about-us/figures for mob/Star 6.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute small-star-bg-2 pc">
-                                    <img
-                                        src="/images/about-us/figures for mob/Star 7.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute small-elipse-left pc">
-                                    <img
-                                        src="/images/about-us/figures for mob/Ellipse 1.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                    <div class="absolute star-bg-cacar">
+                        <img src="/images/images-for-section-2/Star-bg.png" alt="star" />
                     </div>
-                    <div class="background background-about-us-bottom"></div>
-                </section>
-                <section class="projects">
-                    <div class="container-other">
-                        <div class="projects-block">
-                            <div class="projects-images-block">
-                                <div>
-                                    <h2 class="title title-projects-black">
-                                        Проекты
-                                    </h2>
-                                </div>
-                                <div class="projects-screen-block">
-                                    <img
-                                        src="/images/Projects-screenshot/image 9.png"
-                                        class="projects-screen-image projects-screen-block-large"
-                                    />
-                                    <img
-                                        src="/images/Projects-screenshot/image 10.png"
-                                        class="projects-screen-image"
-                                    />
-                                    <img
-                                        src="/images/Projects-screenshot/image 11.png"
-                                        class="projects-screen-image"
-                                    />
-                                    <div class="projects-screen-small-block">
-                                        <img
-                                            src="/images/Projects-screenshot/image 10.png"
-                                            class="projects-screen-image"
-                                        />
-                                        <img
-                                            src="/images/Projects-screenshot/image 9.png"
-                                            class="projects-screen-image"
-                                        />
-                                        <img
-                                            src="/images/Projects-screenshot/image 11.png"
-                                            class="projects-screen-image"
-                                        />
-                                        <img
-                                            src="/images/Projects-screenshot/image 10.png"
-                                            class="projects-screen-image"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projects-text-block">
-                                <div class="points-pictures-project">
-                                    <img
-                                        src="/images/Projects-screenshot/square-points.svg"
-                                        alt="points"
-                                    />
-                                </div>
-                                <div class="want-the-same-block">
-                                    <h2 class="title title-projects">
-                                        Хотите так же?
-                                    </h2>
-                                    <p class="text projects-text">
-                                        Получите качественный трафик и высокий
-                                        ROI с помощью нашей экспертной настройки
-                                        рекламы.
-                                    </p>
-                                    <button
-                                        type="button"
-                                        onclick="openPopup()"
-                                        class="btn default-btn"
-                                    >
-                                        <span class="default-btn-text">
-                                            Получить консультацию
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="absolute projects-rocket">
-                                <img
-                                    src="/images/Projects-screenshot/figures/rocket.png"
-                                    alt="rocket"
-                                />
-                            </div>
-                            <div class="absolute elipse-projects-left">
-                                <img
-                                src="/images/Projects-screenshot/figures/Ellipse-left.png"
-                                alt=Ellipse" />
-                            </div>
-                            <div class="absolute elipse-projects-right">
-                                <img
-                                    src="/images/Projects-screenshot/figures/Ellipse-right.png"
-                                    alt="Ellipse"
-                                />
-                            </div>
-                            <div class="absolute star-bg-projects">
-                                <img
-                                    src="/images/Projects-screenshot/figures/Star-bg-2.png"
-                                    alt="Star"
-                                />
-                            </div>
-                            <div class="absolute star-bg-2-projects">
-                                <img
-                                    src="/images/Projects-screenshot/figures/Star-bg.png"
-                                    alt="Star"
-                                />
-                            </div>
-                            <div class="absolute star-no-bg-projects">
-                                <img
-                                    src="/images/Projects-screenshot/figures/Star-no-bg.png"
-                                    alt="Star"
-                                />
-                            </div>
-                            <div class="absolute star-no-bg-2-projects">
-                                <img
-                                    src="/images/Projects-screenshot/figures/Star-no-bg.png"
-                                    alt="Star"
-                                />
-                            </div>
-                        </div>
+                    <div class="absolute star-no-bg-cacar">
+                        <img src="/images/images-for-section-2/Star-no-bg.png" alt="star" />
                     </div>
-                </section>
-                <section class="reviews">
-                    <div class="background background-reviews-top"></div>
-                    <div class="background background-reviews">
-                        <div class="container-other">
-                            <div class="reviews-block">
-                                <div class="absolute quotes-top">
-                                    <img
-                                        src="/images/reviews/quotes-top.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="title-reviews-block">
-                                    <h2 class="title">Отзывы</h2>
-                                </div>
-
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        src="/images/reviews/men1.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Андрей, директор
-                                                        компании
-                                                        "Экспресс-Доставка"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Благодаря профессиональному
-                                                подходу и высокой компетенции
-                                                команды, наша рекламная кампания
-                                                стала намного эффективнее. Объем
-                                                продаж увеличился, а затраты на
-                                                рекламу снизились. Рекомендую!
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        class="card-avatar"
-                                                        src="images/reviews/woman2.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Марина, маркетолог
-                                                        интернет-магазина "Мода
-                                                        и стиль"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Команда специалистов помогла нам
-                                                определиться с оптимальной
-                                                стратегией рекламы в Google Ads.
-                                                Приятно работать с такими
-                                                профессионалами. Отличный
-                                                результат и высокий уровень
-                                                обслуживания.
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        class="card-avatar"
-                                                        src="images/reviews/men3.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Игорь, владелец сети
-                                                        кафе "Гурман"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Наши рекламные кампании стали
-                                                более целенаправленными и
-                                                результативными благодаря
-                                                сотрудничеству с этой командой.
-                                                Они всегда на связи и готовы
-                                                помочь с любыми вопросами.
-                                                Спасибо!
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        src="/images/reviews/men1.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Андрей, директор
-                                                        компании
-                                                        "Экспресс-Доставка"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Благодаря профессиональному
-                                                подходу и высокой компетенции
-                                                команды, наша рекламная кампания
-                                                стала намного эффективнее. Объем
-                                                продаж увеличился, а затраты на
-                                                рекламу снизились.
-                                                <br />Рекомендую!
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        class="card-avatar"
-                                                        src="images/reviews/woman2.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Марина, маркетолог
-                                                        интернет-магазина "Мода
-                                                        и стиль"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Команда специалистов помогла нам
-                                                определиться с оптимальной
-                                                стратегией рекламы в Google Ads.
-                                                Приятно работать с такими
-                                                профессионалами. Отличный
-                                                результат и высокий уровень
-                                                обслуживания.
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        class="card-avatar"
-                                                        src="images/reviews/men3.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Игорь, владелец сети
-                                                        кафе "Гурман"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Наши рекламные кампании стали
-                                                более целенаправленными и
-                                                результативными благодаря
-                                                сотрудничеству с этой командой.
-                                                Они всегда на связи и готовы
-                                                помочь с любыми вопросами.
-                                                Спасибо!
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        src="/images/reviews/men1.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Андрей, директор
-                                                        компании
-                                                        "Экспресс-Доставка"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Благодаря профессиональному
-                                                подходу и высокой компетенции
-                                                команды, наша рекламная кампания
-                                                стала намного эффективнее. Объем
-                                                продаж увеличился, а затраты на
-                                                рекламу снизились. Рекомендую!
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        class="card-avatar"
-                                                        src="images/reviews/woman2.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Марина, маркетолог
-                                                        интернет-магазина "Мода
-                                                        и стиль"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Команда специалистов помогла нам
-                                                определиться с оптимальной
-                                                стратегией рекламы в Google Ads.
-                                                Приятно работать с такими
-                                                профессионалами. Отличный
-                                                результат и высокий уровень
-                                                обслуживания.
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card">
-                                            <div
-                                                class="card-header custom-card-header"
-                                            >
-                                                <div class="thumbnail">
-                                                    <img
-                                                        class="card-avatar"
-                                                        src="images/reviews/men3.png"
-                                                        alt=""
-                                                    />
-                                                </div>
-
-                                                <div class="title-container">
-                                                    <h3 class="card-title">
-                                                        Игорь, владелец сети
-                                                        кафе "Гурман"
-                                                    </h3>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                Наши рекламные кампании стали
-                                                более целенаправленными и
-                                                результативными благодаря
-                                                сотрудничеству с этой командой.
-                                                Они всегда на связи и готовы
-                                                помочь с любыми вопросами.
-                                                Спасибо!
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div> -->
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="absolute quotes-bottom">
-                                    <img
-                                        src="/images/reviews/quotes-bottom.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                    <div class="absolute elipse-cacar-left">
+                        <img src="/images/images-for-section-2/Ellipse-left.png" alt="elipse" />
                     </div>
-                    <div class="background background-reviews-bottom"></div>
-                </section>
-            </main>
-
-            <footer class="footer">
-                <section class="contacts">
-                    <div class="contacts-container">
-                        <div class="container-other">
-                            <div class="footer-block">
-                                <div class="contacts-block">
-                                    <h2 class="title contacts-title">
-                                        Контакты
-                                    </h2>
-                                    <img
-                                        class="absolute footer-figure"
-                                        src="/images/footer.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="contacts-icon-block">
-                                    <div class="icon-block">
-                                        <div class="icon-container">
-                                            <a href="#"
-                                                ><img
-                                                    src="/images/telegram.svg"
-                                                    alt="telegram"
-                                            /></a>
-                                        </div>
-                                        <div class="icon-container">
-                                            <a href="#"
-                                                ><img
-                                                    src="/images/viber.svg"
-                                                    alt="viber"
-                                            /></a>
-                                        </div>
-                                    </div>
-                                    <div class="tel-mail-block">
-                                        <h2 class="number-mail-title">
-                                            +3 8 099 000 00 00
-                                        </h2>
-                                        <h2 class="number-mail-title">
-                                            target4u.@gmail.com
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div class="form-block">
-                                    <h2 class="questions">Остались вопросы?</h2>
-                                    <form>
-                                        <input
-                                            type="text"
-                                            name="first-name"
-                                            id="first-name"
-                                            placeholder="Ваше имя"
-                                            class="input-footer"
-                                        />
-                                        <input
-                                            type="tel"
-                                            id="phone-input"
-                                            name="phone"
-                                            placeholder="+ 380 (00) 000 00 00"
-                                            onblur="clearPrefix()"
-                                            onfocus="restorePrefix()"
-                                            class="input-footer"
-                                        />
-
-                                        <input
-                                            type="text"
-                                            name="request"
-                                            id="request"
-                                            placeholder="Ваш запрос"
-                                            class="input-footer"
-                                        />
-                                        <button id="send">Отправить</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="absolute star-bg-cacar-2">
+                        <img src="/images/images-for-section-2/Star-bg.png" alt="star" />
                     </div>
-                </section>
-
-                <div class="container-other">
-                    <a href="#" class="large-button-link">
-                        <div class="large-button-container">
-                            <div class="button-text-block">
-                                <h2 class="button-text">Узнать больше о нас</h2>
-                                <img src="/images/right.svg" alt="Стрелка" />
-                            </div>
-                        </div>
-                    </a>
+                    <div class="absolute star-no-bg-cacar-2">
+                        <img src="/images/images-for-section-2/Star-no-bg.png" alt="star" />
+                    </div>
+                    <div class="absolute elipse-cacar-right">
+                        <img src="/images/images-for-section-2/Ellipse-right.png" alt="elipse" />
+                    </div>
+                    <div class="absolute square-cacar">
+                        <img src="/images/images-for-section-2/Group 36.png" alt="elipse" />
+                    </div>
+                    <div class="absolute square-cacar-2">
+                        <img src="/images/images-for-section-2/Group 36.png" alt="elipse" />
+                    </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="absolute background background-about-us-top"></div>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-            crossorigin="anonymous"
-        ></script>
-        <script src="/index.js"></script>
-    </body>
+            <div class="background background-about-us-main">
+                <div class="container-other custom-container">
+                    <div class="about-us-main-block">
+                        <div class="about-us-main">
+                            <div class="title-block-about-us">
+                                <h2 class="title title-about-us">
+                                    О нас
+                                </h2>
+                            </div>
+                            <div class="text-block-about-us">
+                                <p class="text text-about-us">
+                                    Наша компания – это команда
+                                    экспертов с более чем 10-летним
+                                    опытом в сфере настройки рекламы
+                                    Google Ads.
+                                </p>
+                                <p class="text text-about-us">
+                                    Мы гордимся нашей командой
+                                    сертифицированных специалистов,
+                                    которые постоянно совершенствуют
+                                    свои навыки и внедряют передовые
+                                    решения для достижения максимальных
+                                    результатов.
+                                </p>
+                                <p class="text text-about-us">
+                                    Обращаясь к нам, вы получаете
+                                    гарантию высокой конверсии,
+                                    оптимального использования бюджета и
+                                    индивидуального подхода к вашему
+                                    бизнесу. <br />
+                                    Выбирая нас, вы выбираете успех!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-us-img-phone-block">
+                            <img src="/images/about-us/phone.png" alt="phone" class="about-us-img-phone" />
+                        </div>
+                        <div class="absolute rectangle-about-us">
+                            <img src="/images/about-us/rectangle.png" alt="rectangle" />
+                        </div>
+                        <div class="absolute rectangle-points-about-us">
+                            <img src="/images/about-us/rectangle-points.png" alt="rectangle" />
+                        </div>
+                        <div class="absolute group-figures-about-us">
+                            <img src="/images/about-us/figures/Group 13.png" alt="" />
+                        </div>
+                        <div class="absolute large-semicircle-about-us">
+                            <img src="/images/about-us/large-semicircle.png" alt="" />
+                        </div>
+                        <div class="absolute large-triangle-about-us">
+                            <img src="/images/about-us/large-triangle.png" alt="" />
+                        </div>
+                        <div class="absolute small-star-no-bg pc">
+                            <img src="/images/about-us/figures for mob/Star 5.png" alt="" />
+                        </div>
+                        <div class="absolute small-star-bg pc">
+                            <img src="/images/about-us/figures for mob/Star 2.png" alt="" />
+                        </div>
+                        <div class="absolute small-elipse-right pc">
+                            <img src="/images/about-us/figures for mob/Ellipse 51.png" alt="" />
+                        </div>
+                        <div class="absolute small-star-no-bg-2 pc">
+                            <img src="/images/about-us/figures for mob/Star 6.png" alt="" />
+                        </div>
+                        <div class="absolute small-star-bg-2 pc">
+                            <img src="/images/about-us/figures for mob/Star 7.png" alt="" />
+                        </div>
+                        <div class="absolute small-elipse-left pc">
+                            <img src="/images/about-us/figures for mob/Ellipse 1.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background background-about-us-bottom"></div>
+        </section>
+        <section class="projects">
+            <div class="container-other">
+                <div class="projects-block">
+                    <div class="projects-images-block">
+                        <div>
+                            <h2 class="title title-projects-black">
+                                Проекты
+                            </h2>
+                        </div>
+                        <div class="projects-screen-block">
+                            <img src="/images/Projects-screenshot/image 9.png"
+                                class="projects-screen-image projects-screen-block-large" />
+                            <img src="/images/Projects-screenshot/image 10.png" class="projects-screen-image" />
+                            <img src="/images/Projects-screenshot/image 11.png" class="projects-screen-image" />
+                            <div class="projects-screen-small-block">
+                                <img src="/images/Projects-screenshot/image 10.png" class="projects-screen-image" />
+                                <img src="/images/Projects-screenshot/image 9.png" class="projects-screen-image" />
+                                <img src="/images/Projects-screenshot/image 11.png" class="projects-screen-image" />
+                                <img src="/images/Projects-screenshot/image 10.png" class="projects-screen-image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-text-block">
+                        <div class="points-pictures-project">
+                            <img src="/images/Projects-screenshot/square-points.svg" alt="points" />
+                        </div>
+                        <div class="want-the-same-block">
+                            <h2 class="title title-projects">
+                                Хотите так же?
+                            </h2>
+                            <p class="text projects-text">
+                                Получите качественный трафик и высокий
+                                ROI с помощью нашей экспертной настройки
+                                рекламы.
+                            </p>
+                            <button type="button" onclick="openPopup()" class="btn default-btn">
+                                <span class="default-btn-text">
+                                    Получить консультацию
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="absolute projects-rocket">
+                        <img src="/images/Projects-screenshot/figures/rocket.png" alt="rocket" />
+                    </div>
+                    <div class="absolute elipse-projects-left">
+                        <img src="/images/Projects-screenshot/figures/Ellipse-left.png" alt=Ellipse" />
+                    </div>
+                    <div class="absolute elipse-projects-right">
+                        <img src="/images/Projects-screenshot/figures/Ellipse-right.png" alt="Ellipse" />
+                    </div>
+                    <div class="absolute star-bg-projects">
+                        <img src="/images/Projects-screenshot/figures/Star-bg-2.png" alt="Star" />
+                    </div>
+                    <div class="absolute star-bg-2-projects">
+                        <img src="/images/Projects-screenshot/figures/Star-bg.png" alt="Star" />
+                    </div>
+                    <div class="absolute star-no-bg-projects">
+                        <img src="/images/Projects-screenshot/figures/Star-no-bg.png" alt="Star" />
+                    </div>
+                    <div class="absolute star-no-bg-2-projects">
+                        <img src="/images/Projects-screenshot/figures/Star-no-bg.png" alt="Star" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="background background-reviews-top"></div>
+            <div class="background background-reviews">
+                <div class="container-other">
+                    <div class="reviews-block">
+                        <div class="absolute quotes-top">
+                            <img src="/images/reviews/quotes-top.png" alt="" />
+                        </div>
+                        <div class="title-reviews-block">
+                            <h2 class="title">Отзывы</h2>
+                        </div>
+
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img src="/images/reviews/men1.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Андрей, директор
+                                                компании
+                                                "Экспресс-Доставка"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Благодаря профессиональному
+                                        подходу и высокой компетенции
+                                        команды, наша рекламная кампания
+                                        стала намного эффективнее. Объем
+                                        продаж увеличился, а затраты на
+                                        рекламу снизились. Рекомендую!
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img class="card-avatar" src="images/reviews/woman2.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Марина, маркетолог
+                                                интернет-магазина "Мода
+                                                и стиль"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Команда специалистов помогла нам
+                                        определиться с оптимальной
+                                        стратегией рекламы в Google Ads.
+                                        Приятно работать с такими
+                                        профессионалами. Отличный
+                                        результат и высокий уровень
+                                        обслуживания.
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img class="card-avatar" src="images/reviews/men3.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Игорь, владелец сети
+                                                кафе "Гурман"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Наши рекламные кампании стали
+                                        более целенаправленными и
+                                        результативными благодаря
+                                        сотрудничеству с этой командой.
+                                        Они всегда на связи и готовы
+                                        помочь с любыми вопросами.
+                                        Спасибо!
+                                    </div>
+                                </div>
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img src="/images/reviews/men1.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Андрей, директор
+                                                компании
+                                                "Экспресс-Доставка"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Благодаря профессиональному
+                                        подходу и высокой компетенции
+                                        команды, наша рекламная кампания
+                                        стала намного эффективнее. Объем
+                                        продаж увеличился, а затраты на
+                                        рекламу снизились.
+                                        <br />Рекомендую!
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img class="card-avatar" src="images/reviews/woman2.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Марина, маркетолог
+                                                интернет-магазина "Мода
+                                                и стиль"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Команда специалистов помогла нам
+                                        определиться с оптимальной
+                                        стратегией рекламы в Google Ads.
+                                        Приятно работать с такими
+                                        профессионалами. Отличный
+                                        результат и высокий уровень
+                                        обслуживания.
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img class="card-avatar" src="images/reviews/men3.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Игорь, владелец сети
+                                                кафе "Гурман"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Наши рекламные кампании стали
+                                        более целенаправленными и
+                                        результативными благодаря
+                                        сотрудничеству с этой командой.
+                                        Они всегда на связи и готовы
+                                        помочь с любыми вопросами.
+                                        Спасибо!
+                                    </div>
+                                </div>
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img src="/images/reviews/men1.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Андрей, директор
+                                                компании
+                                                "Экспресс-Доставка"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Благодаря профессиональному
+                                        подходу и высокой компетенции
+                                        команды, наша рекламная кампания
+                                        стала намного эффективнее. Объем
+                                        продаж увеличился, а затраты на
+                                        рекламу снизились. Рекомендую!
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img class="card-avatar" src="images/reviews/woman2.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Марина, маркетолог
+                                                интернет-магазина "Мода
+                                                и стиль"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Команда специалистов помогла нам
+                                        определиться с оптимальной
+                                        стратегией рекламы в Google Ads.
+                                        Приятно работать с такими
+                                        профессионалами. Отличный
+                                        результат и высокий уровень
+                                        обслуживания.
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <div class="card-header custom-card-header">
+                                        <div class="thumbnail">
+                                            <img class="card-avatar" src="images/reviews/men3.png" alt="" />
+                                        </div>
+
+                                        <div class="title-container">
+                                            <h3 class="card-title">
+                                                Игорь, владелец сети
+                                                кафе "Гурман"
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="description">
+                                        Наши рекламные кампании стали
+                                        более целенаправленными и
+                                        результативными благодаря
+                                        сотрудничеству с этой командой.
+                                        Они всегда на связи и готовы
+                                        помочь с любыми вопросами.
+                                        Спасибо!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="absolute quotes-bottom">
+                            <img src="/images/reviews/quotes-bottom.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background background-reviews-bottom"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="contacts">
+            <div class="contacts-container">
+                <div class="container-other">
+                    <div class="footer-block">
+                        <div class="contacts-block">
+                            <h2 class="title contacts-title">
+                                Контакты
+                            </h2>
+                            <img class="absolute footer-figure" src="/images/footer.svg" alt="" />
+                        </div>
+                        <div class="contacts-icon-block">
+                            <div class="icon-block">
+                                <div class="icon-container">
+                                    <a href="#"><img src="/images/telegram.svg" alt="telegram" /></a>
+                                </div>
+                                <div class="icon-container">
+                                    <a href="#"><img src="/images/viber.svg" alt="viber" /></a>
+                                </div>
+                            </div>
+                            <div class="tel-mail-block">
+                                <h2 class="number-mail-title">
+                                    +3 8 099 000 00 00
+                                </h2>
+                                <h2 class="number-mail-title">
+                                    target4u.@gmail.com
+                                </h2>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="questions">Остались вопросы?</h2>
+                            <form class="d-flex custom-form">
+                                <input type="text" name="first-name" placeholder="Ваше имя" id="first-name"
+                                    class="form-control border border-2 rounded-pill p-3 input-footer" />
+                                
+                                <input type="tel"  name="phone" placeholder="+ 380 (00) 000 00 00"
+                                    onblur="clearPrefix()" onfocus="restorePrefix()"  id="phone-input"
+                                    class="form-control border border-2 rounded-pill p-3 input-footer" />
+                                   
+                                <input type="text" name="request"  placeholder="Ваш запрос"
+                                    class="form-control border border-2 rounded-pill p-3 input-footer" id="request"/>
+                                    
+                                <button id="send">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-other">
+            <a href="#" class="large-button-link">
+                <div class="large-button-container">
+                    <div class="button-text-block">
+                        <h2 class="button-text">Узнать больше о нас</h2>
+                        <img src="/images/right.svg" alt="Стрелка" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
 </html>

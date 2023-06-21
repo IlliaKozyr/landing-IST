@@ -35,12 +35,12 @@ body._lock {
 .navbar-toggler.custom-toggle {
     background-color: #6676ff;
     opacity: 0.8;
-    z-index: 100;
-  }
+    z-index: 10000;
+}
 
-  .navbar-toggler-icon.custom-toggler-icon {
+.navbar-toggler-icon.custom-toggler-icon {
     color: white;
-  }
+}
 
 .title {
     font-size: 50px;
@@ -50,15 +50,18 @@ body._lock {
     font-size: 45px;
 }
 
-
 /* --------------------------- POPUP ------------------------ */
+
+.form-control.border.border-2.rounded-pill.p-3.mb-4.custom-input-popup {
+    border: 2px solid #1d1d1d !important;
+
+}
 
 .btn-close {
     position: absolute;
     top: 10px;
     right: 10px;
-    /* Добавьте другие стили по вашему усмотрению */
-  }
+}
 body {
     margin: 0;
     padding: 0;
@@ -98,9 +101,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-
-.input-popup {
+.form-control.input-popup {
     width: 168px;
 }
 
@@ -124,13 +125,13 @@ body {
     color: #ff288b;
 }
 
-.input-popup {
-    border: 2px solid #1d1d1d;
+/* .form-control.input-popup {
+   
     border-radius: 1e9px;
     padding: 14px 25px;
     width: 100%;
     margin-bottom: 24px;
-}
+} */
 
 .popup-title-block {
     text-align: center;
@@ -139,9 +140,6 @@ body {
 .popup-btn {
     margin-top: 25px;
 }
-
-
-
 
 /* ----------------------BURGER---------------------------- */
 
@@ -179,10 +177,9 @@ span.default-btn-text {
     width: 100px;
 }
 
-.default-btn-text.default-btn-text-color{
+.default-btn-text.default-btn-text-color {
     margin-right: 0px;
     color: #ff288b;
-
 }
 
 .default-text:hover {
@@ -195,16 +192,14 @@ span.default-btn-text {
     padding: 25px 0 100px 0;
 }
 
-
-
 .btn.default-btn.default-btn-bg {
-    background-color: #FFFFFF;
-    border: 2px solid #FF288B;
+    background-color: #ffffff;
+    border: 2px solid #ff288b;
     margin-left: 0 !important;
 }
 
 .btn.default-btn.default-btn-bg:hover {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     opacity: 0.8;
 }
 
@@ -338,7 +333,6 @@ span.default-btn-text {
     max-width: 380px;
 }
 
-
 .price-block-main {
     display: flex;
     padding-top: 100px;
@@ -459,7 +453,7 @@ span.default-btn-text {
 .about-us-img-phone {
     position: relative;
     z-index: 1;
-    
+
     right: 30px;
 }
 
@@ -614,7 +608,6 @@ span.default-btn-text {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
-    
 }
 
 .card-header.custom-card-header {
@@ -716,11 +709,10 @@ span.default-btn-text {
     padding-bottom: 46px;
 }
 
-.input-footer {
-    border: 2px solid #1d1d1d;
-    border-radius: 1e9px;
-    padding: 14px 25px;
-    margin-right: 17px;
+
+.form-control.input-footer {
+    /* border: 2px solid #1d1d1d !important; */
+    margin-right: 24px;
 }
 
 #first-name {
@@ -802,13 +794,13 @@ span.default-btn-text {
     /* --------------------HEADER-------------------- */
 
     .btn.default-btn.default-btn-mob {
-        background-color: #FFFFFF;
-        border: 2px solid #FF288B;
+        background-color: #ffffff;
+        border: 2px solid #ff288b;
         width: 70%;
     }
 
     .default-btn-text.default-btn-text-mob {
-        color: #FF288B;
+        color: #ff288b;
     }
 
     .navbar-collapse {
@@ -823,10 +815,6 @@ span.default-btn-text {
         padding: 80px 20px 20px 20px;
     }
 
-    .navbar-toggler.custom-toggle {
-        z-index: 1000;
-    }
-    
     .navbar-toggler {
         margin-top: 10px; /* Измените отступ сверху, если нужно */
     }
@@ -1169,6 +1157,10 @@ span.default-btn-text {
         right: -4px;
     }
 
+    .form-control.border.border-2.rounded-pill.p-3.mb-4.custom-input-popup {
+        border: 2px solid #1d1d1d !important;
+        width: 75vw;
+    }
     .popup-wrap .popup-content {
         width: 90%;
         height: 50%;
@@ -1192,7 +1184,7 @@ span.default-btn-text {
     .form-popup-input-block {
         align-items: center;
     }
-    .input-popup {
+    .form-control.input-popup {
         width: 70%;
     }
 
@@ -1222,6 +1214,26 @@ span.default-btn-text {
     .about-us-img-phone {
         right: 0px;
     }
+
+    .form-control.border.border-2.rounded-pill.p-3.input-footer {
+        /* width: 90vw !important; */
+        margin: 0 0 16px 0;
+    }
+
+    #sand {
+        width: 90vw !important;
+    }
+
+  
+
+    .d-flex.custom-form {
+        display: block !important;
+    }
+    #first-name,
+    #phone-input, 
+    #request{
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1235,7 +1247,7 @@ span.default-btn-text {
         background-color: #3f3efc;
         padding: 20px;
     }
-    
+
     .navbar-toggler {
         margin-top: 10px; /* Измените отступ сверху, если нужно */
     }
@@ -1243,14 +1255,25 @@ span.default-btn-text {
     .btn.default-btn.default-btn-mob {
         width: 100%;
     }
-    
 
+    .d-flex.custom-form {
+        display: block !important;
+    }
+    #first-name,
+    #phone-input, 
+    #request{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
     /* --------------------HEADER-------------------- */
 
-    
+    .form-control.border.border-2.rounded-pill.p-3.mb-4 {
+        width: 100%;
+    }
     .star-bg-header,
     .ellipse-left-header,
     .star-no-bg-header {
@@ -1558,7 +1581,7 @@ span.default-btn-text {
     .form-popup-input-block {
         align-items: center;
     }
-    .input-popup {
+    .form-control.input-popup {
         width: 100%;
     }
 
@@ -1569,7 +1592,7 @@ span.default-btn-text {
         margin-top: 0px;
     }
 
-    .about-us-img-phone  {
+    .about-us-img-phone {
         right: 0px;
     }
 
@@ -1589,6 +1612,6 @@ span.default-btn-text {
     .footer-block {
         padding-top: 100px;
     }
+
     
 }
-
